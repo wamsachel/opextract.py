@@ -214,15 +214,15 @@ if __name__ == '__main__':
     else:
         bin_file = args.bin_file
         func_args = {}
-        if args.function:
+        if args.function is not None:
             func_args['function'] = args.function
-        if args.quotations:
+        if args.quotations is not None:
             func_args['quotations'] = args.quotations
-        if args.asm:
+        if args.asm is not None:
             func_args['asm'] = args.asm
-        if args.condense:
+        if args.condense is not None:
             func_args['condense'] = args.condense
-        if args.verbose:
+        if args.verbose is not None:
             func_args['verbose'] = args.verbose
 
         # KICK OFF MAIN FUNCTION
